@@ -1,0 +1,20 @@
+ServerList:
+- game
+Prefix:
+  test:
+    name: "&3我是测试"
+    description:
+    - "强的不要要的"
+    model: "DIAMOND"
+    #GIVE_ONLY | BUY_POINT
+    aquire_mode: "BUY_POINT"
+    mode_value: 30
+  tasd:
+    name: "&a测试二号"
+    description:
+    - "专享称号哦&3awda"
+    - "????"
+    - "ycchgvh"
+    model: "EMERALD_BLOCK"
+    aquire_mode: "GIVE_ONLY"
+    mode_value: 0

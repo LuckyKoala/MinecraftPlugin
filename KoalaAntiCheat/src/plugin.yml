@@ -1,0 +1,4 @@
+name: KoalaAntiCheat
+main: tech.zuosi.plugin.koalaanticheat.KoalaAntiCheat
+version: 0.0.2 alpha
+author: LuckyKoala

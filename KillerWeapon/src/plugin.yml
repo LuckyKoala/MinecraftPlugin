@@ -1,0 +1,25 @@
+name: KillerWeapon
+main: net.myplugin.killerweapon.core
+version: 0.0.8
+author: iwar
+permissions:
+  killerweapon.*:
+    description: All permission
+    default: op
+    children:
+      killerweapon.command: true
+      killerweapon.use: true
+  killerweapon.command:
+    description: Permission to use command
+    default: op
+  killerweapon.use:
+    description: Permission to use killer-weapon
+    default: true
+
+
+commands:
+    kw:
+         description: This is the main command of KillerWeapon.
+         usage: /kw <> []
+         permission: lightslashblade.command
+         permission-message: You don't have <lightslashblade.command>!

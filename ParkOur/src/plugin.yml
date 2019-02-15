@@ -1,0 +1,19 @@
+name: ParkOur
+main: tech.zuosi.minecraft.parkour.Core
+version: 0.1.2-b36
+author: LuckyKoala
+prefix: ParkOur
+loadbefore: [PowerNBT]
+depend: [PowerNBT]
+softdepend: [PlaceHolderAPI]
+commands:
+  po:
+    description: This is the main command of ParkOur.
+    usage: /po
+    permission: parkour.command
+    permission-message: You don't have permission <parkour.command>!
+
+permissions:
+  parkour.command:
+    description: Allows you to use command.
+    default: true

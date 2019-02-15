@@ -1,0 +1,40 @@
+#Essential config
+version: 2
+debug: false
+ad: true
+list:
+  #Weapon-Suppor-List
+  default:
+    BOW: true
+    WOOD_AXE: true
+    WOOD_SWORD: true
+    STONE_AXE: true
+    STONE_SWORD: true
+    IRON_AXE: true
+    IRON_SWORD: true
+    GOLD_AXE: true
+    GOLD_SWORD: true
+    DIAMOND_AXE: true
+    DIAMOND_SWORD: true
+  #Mod-Weapon-Support-List
+  mod:
+    enable: false
+    #Add what in mod you want to support here.
+  #Mob-Support-List
+  mob:
+    player: true
+    zombie: true
+  #Mod-Item-List
+#Message config
+message:
+  activate: You have activate the weapon at your hand,have a time with it!
+  deactivate: You have deactivate the weapon at your hand,what a pity!
+  reload: Reload complete!
+  controlpanel: You must be a player online.
+#Rule config
+etc:
+  ess: 5.0
+  level: 3
+  message: "»÷É±£¡"
+  extra: 2.0
+  limit: 10

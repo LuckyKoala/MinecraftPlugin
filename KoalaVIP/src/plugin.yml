@@ -1,0 +1,17 @@
+name: KoalaVIP
+main: tech.zuosi.minecraft.koalavip.Core
+version: 0.1.22
+author: LuckyKoala
+depend: [PlayerPoints, Craftconomy3, PermissionsEx]
+prefix: KoalaVIP
+commands:
+  kvip:
+    description: This is the main command of KoalaVIP.
+    usage: /kvip
+    permission: koalavip.command
+    permission-message: You don't have permission <koalavip.command>!
+
+permissions:
+  koalavip.command:
+    description: Allows you to use command.
+    default: true

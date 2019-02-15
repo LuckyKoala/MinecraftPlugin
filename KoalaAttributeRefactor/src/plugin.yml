@@ -1,0 +1,50 @@
+name: KoalaAttribute
+author: LuckyKoala
+version: 0.1.9r4
+main: tech.zuosi.koalaattribute.KoalaAttribute
+commands:
+  ka:
+    usage: /ka
+    description: The main command of KoalaAttribute
+    permission: koalaattribute.command
+    permission-message: You should have <koalaattribute.command>
+
+permissions:
+   koalaattribute.*:
+     default: op
+     description: Gives access to all koalaattribute commands
+     children:
+       koalaattribute.add: true
+       koalaattribute.remove: true
+       koalaattribute.show: true
+       koalaattribute.give: true
+       koalaattribute.command: true
+   koalaattribute.use:
+     description: Gives access to all koalaattribute commands
+     default: true
+     children:
+       koalaattribute.add: true
+       koalaattribute.remove: false
+       koalaattribute.show.self: true
+       koalaattribute.command: true
+   koalaattribute.command:
+     description: Allows you to use /ka
+     default: true
+   koalaattribute.add:
+     description: Allows you to add attribute point
+     default: true
+   koalaattribute.remove:
+     description: Allows you to remove attribute point
+     default: op
+   koalaattribute.give:
+     description: Allows you to give somebody some point
+   koalaattribute.show:
+     description: Allows you to show attribute info
+     children:
+       koalaattribute.show.self: true
+       koalaattribute.show.other: true
+   koalaattribute.show.self:
+     description: Allows you to see yourself's attribute info
+     default: true
+   koalaattribute.show.other:
+     description: Allows you to see other's attribute info

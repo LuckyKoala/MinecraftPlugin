@@ -1,0 +1,50 @@
+name: VisualIntensify
+main: net.myplugin.visualintensify.VisualIntensify
+version: 0.2.1r3
+author: iwar
+prefix: 面板强化
+permissions:
+    visualintensify.*:
+      description: All permission of the plugin.
+      default: op
+      children:
+        visualintensify.reload: true
+        visualintensify.use: true
+        visualintensify.getitem: true
+    visualintensify.admin:
+      description: Allow you to reload plugin's config.
+      default: op
+    visualintensify.use:
+      description: Use all features.
+      default: true
+      children:
+        visualintensify.use.intensify: true
+        visualintensify.use.gem: true
+        visualintensify.use.reborn: true
+        visualintensify.use.zhuiying: true
+    visualintensify.use.intensify:
+      default: true
+    visualintensify.use.gem:
+      default: true
+    visualintensify.use.reborn:
+      default: true
+    visualintensify.use.zhuiying:
+      default: true
+    visualintensify.getitem:
+      description: get item
+      default: op
+      children:
+        visualintensify.getitem.panel: true
+    visualintensify.getitem.panel:
+      description: get panel
+      default: true
+
+
+
+commands:
+   vi:
+     description: This is the main command of visualintensify.
+     usage: /visualintensify <reload/panel/open/version>
+     permission: visualintensify.use
+     permission-message: You don't have <visualintensify.use>!
+

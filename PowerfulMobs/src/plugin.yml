@@ -1,0 +1,11 @@
+name: PowerfulMobs
+main: tech.zuosi.powerfulmobs.PowerfulMobs
+version: 0.3.7
+author: LuckyKoala
+commands:
+   pmob:
+     description: This is the main command of PowerfulMobs.
+     usage: /pmob <setdrop>/<debug>/<update>
+     permission: powerfulmobs.*
+     permission-message: You don't have permission <powerfulmobs.*>!
+

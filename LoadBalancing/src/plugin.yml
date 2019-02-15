@@ -1,0 +1,4 @@
+main: tech.zuosi.loadbalancing.Main
+author: LuckyKoala
+name: LoadBalancing
+version: 0.2.0

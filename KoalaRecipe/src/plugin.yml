@@ -1,0 +1,41 @@
+name: KoalaRecipe
+main: tech.zuosi.koalarecipe.KoalaRecipe
+version: 0.0.5r48
+author: LuckyKoala
+prefix: KoalaRecipe
+depend: [PowerNBT]
+
+commands:
+  recipe:
+    description: Main command.
+    usage: /recipe
+
+permissions:
+  koalarecipe.*:
+    description: All permissions required for this plugin.
+    default: op
+    children:
+      koalarecipe.create: true
+      koalarecipe.craft: true
+      koalarecipe.update: true
+  koalarecipe.create:
+    description: Permission required for creating a new recipe.
+    default: op
+  koalarecipe.update:
+      description: Permission required for update.
+      default: op
+  koalarecipe.debug:
+        description: Permission required for debug.
+        default: op
+  koalarecipe.craft:
+    description: Permission required for crafting a product.
+    default: op
+    children:
+      koalarecipe.craft.panel: true
+      koalarecipe.craft.command: true
+  koalarecipe.craft.panel:
+    description: Permission required for crafting a product in panel.
+    default: true
+  koalarecipe.craft.command:
+    description: Permission required for crafting a product by command.
+    default: op

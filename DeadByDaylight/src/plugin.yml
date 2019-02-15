@@ -1,0 +1,11 @@
+name: DeadByDaylight
+author: LuckyKoala
+version: 1.0
+main: tech.zuosi.deadbydaylight.DeadByDaylightByDaylight
+commands:
+  dbd:
+    description: This is the main command of DeadByDaylight
+    usage: /dbd
+    permission: deadbydaylight.*
+    permission-message: You don't have permission <deadbydaylight.*>!
+

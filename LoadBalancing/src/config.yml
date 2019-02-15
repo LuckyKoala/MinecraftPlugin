@@ -1,0 +1,10 @@
+#Default group
+#格式:
+#添加可供分流的服务器及分流模式
+#分流模式目前只支持0,人数均衡,也可省略分流模式
+
+debug: true
+Group:
+  mode: 0
+  server_list:
+    - "game"

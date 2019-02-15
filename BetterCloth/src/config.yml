@@ -1,0 +1,45 @@
+version: 1.4.4 fix
+#defaultsheild: 2.0
+#defaultRestoreSpeed: 30
+#defaultMAXPoint: 5
+item: 
+  toukui:
+    ItemID: 310
+    DisplayName: '&aHelmet'
+    Lore: 
+      - "Very nice."
+      - "Try it~"
+    MAXPoint: 4
+    RestoreSpeed: 20
+    Sheild: 1.0
+  kuijia:
+    ItemID: 311
+    DisplayName: '&cChestplate'
+    Lore:
+      - "&aWhoaaaa"
+      - "Fantasy"
+    MAXPoint: 1
+    RestoreSpeed: 20
+    Sheild: 0.5
+  kuzi:
+    ItemID: 312
+    DisplayName: '&bLeggings'
+    Lore:
+      - "&bLine one"
+      - "Line two"
+      - "Line three"
+    MaxPoint: 7
+    RestoreSpeed: 30
+    Sheild: 0.7
+  xiezi:
+    ItemID: 313
+    DisplayName: '&aBoots'
+    Lore:
+      - "bilibili"
+      - "giligili"
+      - "very high"
+      - "very cool"
+      - "Hava a nice day~"
+    MaxPoint: 5
+    RestoreSpeed: 25
+    Sheild: 2.0

@@ -1,0 +1,43 @@
+name: LightSlashBlade
+main: net.myplugin.lightslashblade.coreLSB
+version: 0.1.7
+author: iwar
+permissions:
+    lightslashblade.*:
+      description: Admin of the plugin.
+      default: op
+      children:
+        lightslashblade.activate: true
+        lightslashblade.deactivate: true
+        lightslashblade.reload: true
+        lightslashblade.use: true
+        lightslashblade.debug: true
+        lightslashblade.getitem: true
+    lightslashblade.activate:
+      description: Allow you to activate the equipment.
+      default: op
+    lightslashblade.reload:
+      description: Allow you to reload plugin's config.
+      default: op
+    lightslashblade.deactivate:
+      description: Allow you to deactivate the eqipment.
+      default: op
+    lightslashblade.use:
+      description: info other
+      default: true
+    lightslashblade.debug:
+      description: debug
+      default: op
+    lightslashblade.getitem:
+      description: get item directly.
+      default: op
+
+
+
+commands:
+   lsb:
+     description: This is the main command of Lightslashblade.
+     usage: /lsb <activate/reload/deactivate/debug/getitem> [MaterialName]
+     permission: lightslashblade.use
+     permission-message: You don't have <lightslashblade.use>!
+

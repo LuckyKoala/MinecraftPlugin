@@ -1,0 +1,41 @@
+version: 0.2.1r3
+list:
+  WOOD_AXE: true
+  WOOD_SWORD: true
+  DIAMOND_SWORD: true
+chance:
+  0: 100
+  1: 90
+  2: 80
+  3: 70
+  4: 60
+  5: 50
+  6: 40
+  7: 30
+  8: 20
+  9: 10
+  lucky_gem: 30
+intensify:
+  attack_up: 1
+reborn:
+  percent: 20
+gem:
+  GreatAttack:
+    chance: 20
+    percent: 20
+    chance_up: 20
+    percent_up: 20
+  BloodSuck:
+    percent: 10
+    chance: 20
+  Evade:
+    chance: 20
+  MoreExp:
+    chance: 20
+    perent: 20
+  Speed:
+    amplifier: 0
+count: 0
+log: true
+update: false
+debug: false

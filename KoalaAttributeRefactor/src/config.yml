@@ -1,0 +1,34 @@
+version: v2
+#damage伤害/armor防御/health血量/blood吸血/dodge闪避/speed速度/critical暴击/exp经验加成
+Critical: 2.0 #暴击触发时 伤害*2.0
+Blood: 0.5 #吸血触发时 吸血量=伤害*0.5
+Custom:
+  haozhan:
+    name: "好战"
+    description: "1点伤害加成,1%暴击几率加成"
+    attribute:
+      damage: 1
+      critical: 0.01
+  minjie:
+    name: "敏捷"
+    description: "2%速度加成,1%闪避加成"
+    attribute:
+      speed: 0.02
+      dodge: 0.01
+  jiangu:
+    name: "坚固"
+    description: "1%防御加成,2点生命值加成"
+    attribute:
+      armor: 0.01
+      health: 2
+  shixue:
+    name: "嗜血"
+    description: "1点伤害加成,1%吸血几率加成"
+    attribute:
+      damage: 1
+      blood: 0.01
+  test:
+    name: "测试"
+    description: "测试分页功能,1%防御加成"
+    attribute:
+      armor: 1

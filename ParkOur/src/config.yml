@@ -1,0 +1,54 @@
+# ======== 可用变量(可加颜色代码) =========
+# ====== 仅可在本处使用 ======
+# $mapUnlockedStar$ 地图解锁星星数,以星星字符显示
+# $mapUnlocked$     地图解锁星星数
+# $mapBest$         地图个人最佳时间
+# $mapAllBest$      地图全服最佳时间
+# $mapAllBestName$  地图全服最佳玩家名
+# $sceneUnlocked$   场景解锁星星数
+# $sceneTotal$      场景总星星数
+# $3S$ 三星所需时间
+# $2S$ 二星所需时间
+# $1S$ 一星所需时间
+# $dN$ 难度
+# $sN$ 场景
+# $lN$ 等级
+# ====== 可通过PAPI引用 ======
+# %parkour_unlocked%        总获得星星数
+# %parkour_total%           总星星数
+# ====== 默认模板 ======
+#Pane:
+#  #显示难度的面板只能使用$dN$和其他PAPI变量
+#  DifficultyItem:
+#    name: "$dN$"
+#    lore:
+#      - "点击选择场景"
+#  SceneItem:
+#    name: "$sN$"
+#    lore:
+#      - "进度： $sceneUnlocked$/$sceneTotal$"
+#      - " "
+#      - "点击选择关卡"
+#  MapItem:
+#    name: "$sN$ [Lv $lN$]"
+#    lore:
+#      - "全服最佳时间: $mapAllBest$"
+#      - "个人最佳时间: $mapBest$"
+#      - " "
+#      - "*** $3S$"
+#      - "**  $2S$"
+#      - "*   $1S$"
+#      - " "
+#      - "点击进入游戏"
+# ====== 玩家配置区 ======
+# 同名玩家可能会共享最佳时间
+Ver: 1
+systemBestTimeName: "!$coffeebaby@!"
+Database:
+  setup: false
+  host: "localhost"
+  username: "iwar"
+  password: "123456"
+  database: "parkour"
+  port: 3306
+  prefix: "po_"

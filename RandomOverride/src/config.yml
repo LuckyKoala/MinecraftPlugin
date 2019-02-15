@@ -1,0 +1,5 @@
+version: 02
+fromDir: "/home/joe/test"
+pluginName: "ProSurvivalGames"
+#相对路径，最终路径为 服务端/plugins/%pluginName%/%relativePath%
+relativePath: "Data/Arenas.yml"

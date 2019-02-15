@@ -1,0 +1,10 @@
+name: Open2Teleport
+author: LuckyKoala
+main: tech.zuosi.open2teleport.Main
+version: 0.2.0
+depend: [ProtocolLib]
+
+commands:
+  ot:
+    description: Main command.
+    usage: /ot <set/tp|back>

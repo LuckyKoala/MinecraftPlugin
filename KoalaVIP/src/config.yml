@@ -1,0 +1,64 @@
+version: 03
+debug: false
+setup: false
+Database:
+  engine: mysql #目前只支持MySQL
+  username: iwar
+  password: 123456
+  database: kvip
+  port: 3306
+  prefix: kv_
+Period:
+  tick: 5 #每5分钟检查一次在线玩家的状态
+  downgrade: 10 #每停止消费30天后降低1级
+Constant:
+  craftconomy:
+    world: world #主世界名称
+    currency: dollar #货币名称
+Money:
+  restore: 100 #消费满100以上可以恢复最高VIP组
+# 模板
+BuffCard:
+  "周卡":
+    price: 68
+    days: 7
+    immediately: 68
+    daily: 25
+  "月卡":
+    price: 288
+    days: 30
+    immediately: 288
+    daily: 30
+Command:
+  #定义时，onetime和period选填一个，另一个留空即可，cmd则必填
+  weekly_reward:
+    #onetime可以省略，默认为false
+    period: 7 #七天一次
+    cmd: "give %s stone 1" #%s是玩家名的占位符
+  onetime_reward:
+    onetime: true #只限一次
+    #period 可以省略，默认为0
+    cmd: "give %s bed 1"
+#必须保留一个最小金额限制为0的组
+Group:
+  "无会员":
+      groupId: "novip" #对应权限管理插件中的权限组名称
+      min: 0
+      commands:
+  "基础会员":
+    groupId: "base" #对应权限管理插件中的权限组名称
+    min: 50
+    commands:
+      - "onetime_reward" #引用上面写的命令
+      - "weekly_reward" #可以添加多个命令
+  "初级会员":
+    groupId: "primary"
+    min: 500
+    commands:
+      - "onetime_reward"
+      - "weekly_reward"
+  "高级会员":
+      groupId: "high"
+      min: 1500
+      commands:
+        - "onetime_reward"

@@ -1,0 +1,2 @@
+version: 00
+RemoteConfigPath: "/home/luckykoala/Desktop/config.yml" #加载另一处的配置文件

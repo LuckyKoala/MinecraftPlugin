@@ -1,0 +1,16 @@
+name: ClearMinecart
+main: tech.zuosi.clearminecart.Main
+author: LuckyKoala
+version: 0.0.8
+
+commands:
+   cm:
+     description: This is the main command of ClearMinecart..
+     usage: /cm
+     permission: clearminecart.command
+     permission-message: You don't have <clearminecart.command>!
+
+permissions:
+    clearminecart.command:
+      description: Allow you to use clearminecart command.
+      default: op

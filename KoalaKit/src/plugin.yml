@@ -1,0 +1,16 @@
+name: KoalaKit
+main: tech.zuosi.minecraft.koalakit.Core
+version: 0.0.3
+author: LuckyKoala
+prefix: KoalaKit
+commands:
+  kkit:
+    description: This is the main command of KoalaKit.
+    usage: /kkit username kitname
+    permission: koalakit.command
+    permission-message: You don't have permission <koalakit.command>!
+
+permissions:
+  koalakit.command:
+    description: Allows you to use command.
+    default: op

@@ -1,0 +1,7 @@
+name: AntiAutoFishing
+main: tech.zuosi.plugin.antiautofishing.AntiAutoFishing
+version: 0.0.5 alpha
+author: LuckyKoala
+commands:
+
+permissions:

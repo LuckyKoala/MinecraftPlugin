@@ -1,0 +1,10 @@
+Menu:
+  #1-6
+  row: 4
+  title: "&3Test"
+  infoLore:
+    - "asd"
+    - "aqwf"
+  exitLore:
+    - "asdq"
+    - "qwqw"

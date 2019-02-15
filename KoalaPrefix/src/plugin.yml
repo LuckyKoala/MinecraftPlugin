@@ -1,0 +1,18 @@
+name: KoalaPrefix
+main: tech.zuosi.koalaprefix.main
+version: 0.0.1 r3
+author: LuckyKoala
+softdepend: [PlayerPoints]
+prefix: KoalaPrefix
+
+commands:
+   pre:
+     description: This is the main command of KoalaPrefix.
+     usage: /pre [playerName prefixName prefixState]/[open]/[debug]
+     permission: koalaprefix.command
+     permission-message: You don't have permission <koalaprefix.command>!
+
+permissions:
+   koalaprefix.command:
+     description: Allows you to use command.
+     default: op

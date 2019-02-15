@@ -1,0 +1,10 @@
+name: RebelWar
+main: tech.zuosi.rebelwar.RebelWar
+version: 0.0.2r34
+author: LuckyKoala
+prefix: RebelWar
+
+commands:
+  rebel:
+      description: Main command.
+      usage: 请输入 /rebel 查看具体命令提示

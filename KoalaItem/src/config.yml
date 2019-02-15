@@ -1,0 +1,104 @@
+verison: 0.3.0r067
+#configVersion 05
+IntensifyDamage: 0.3
+Chance:
+  intensify: 0
+  lucky: 100
+Gem:
+#等级*参数=最终参数
+  Critical:
+    #技能的暴击
+    essChance: 20
+    essPercent: 110 #原伤害的百分比参数，如110则暴击伤害为原伤害110%
+    #CRITICALCHANCE "暴击概率提升"
+    incChance: 20
+    #CRITICALDAMAGE "暴击伤害提升"
+    incPercent: 20
+  Blood:
+    essChance: 10
+    #升级时增加的几率
+    incChance: 5
+    essPercent: 10
+    #升级时增加的百分比
+    incPercent: 7
+  Dodge:
+    essChance: 30
+  Speed:
+    amplifier: 1
+  AntiCritical:
+    decPercent: 50
+  Lucky:
+    level: 0
+#AGL 敏捷 ATK 力量 MGA 灵力 DEX 会心
+Attribute:
+  Max: 10 #随机属性点最大值，设置为10代表随机值于0-10之间取，0表示没出现该属性点
+  MGA:
+    regenFactor: 0.1
+  AGL:
+    dodgeChance: 5
+    antiCriticalChance: 5
+  DEX:
+    criticalChance: 5
+  ATK:
+    extraHealth: 5.0
+    regenFactor: 0.1
+SkillList:
+  #Example Skill Config
+  LIGHTNING:
+    cooldown: 10
+    #RIGHT("右键"),ATTACK("攻击"),HOLD("手持"),
+    #SHIFT("潜行"),HURT("受伤"),BACKSTAB("背刺"),CRITICAL("暴击")
+    trigger: RIGHT
+    #POTION_SELF("给予自己药水效果"),POTION_OTHER("给予他人药水效果"),
+    #COMMAND("执行指令"),LIGHTNINGSTRIKE("落雷"),FIREBALL("火球"),
+    #BLOODSUCK("吸血"),DODGE("闪避"),CRITICAL("暴击"),THORN("荆棘")
+    effect:
+      type: LIGHTNINGSTRIKE
+      #不填写默认为100%触发
+      chance: 100
+      #技能持续时间,当选择POTION_SELF和POTION_OTHER时则为效果持续时间,当选择LIGHTNINGSTRIKE和FIREBALL时此项无效
+      time: 5
+      #当选择POTION_SELF和POTION_OTHER时填写药物效果 如SPEED-1 即表示1级速度药水效果
+      #当选择COMMAND时填写指令，无需加/
+      #当选择BLOODSUCK,CRITICAL和THORN时填写百分比（30即30%）
+      #当选择DODGE时填写增加的闪避几率
+      #当选择CRITICAL时填写暴击百分比(30即30%)
+      value: 20
+  FIREBALL:
+    cooldown: 5
+    trigger: BACKSTAB
+    effect:
+      type: FIREBALL
+      chance: 100
+  COMMAND:
+    cooldown: 6
+    trigger: SHIFT
+    effect:
+      type: COMMAND
+      chance: 100
+      value: "gamemode 1 LuckyKoala"
+  POTION:
+    cooldown: 15
+    trigger: HURT
+    effect:
+      type: POTION_SELF
+      time: 3
+      chance: 100
+      value: HEAL-1
+List:
+  WOOD_AXE: true
+  WOOD_SWORD: true
+  IRON_AXE: true
+  IRON_SWORD: true
+  DIAMOND_AXE: true
+  DIAMOND_SWORD: true
+Wine:
+  #id:
+  #  recipe:
+  #  effect:
+  #         POTIONTYPE-SEC-LEVEL/...
+  bear:
+    recipe: "STONE/REDSTONE/STONE"
+    effect: "ABSORPTION-15-2/SPEED-10-1"
+
+

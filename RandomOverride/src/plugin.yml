@@ -1,0 +1,6 @@
+name: RandomOverride
+main: tech.zuosi.minecraft.randomoverride.Core
+version: 0.1.1
+author: LuckyKoala
+loadbefore: [ProSurvivalGames]
+prefix: RandomOverride

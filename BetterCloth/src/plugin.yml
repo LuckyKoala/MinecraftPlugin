@@ -1,0 +1,14 @@
+name: BetterCloth
+main: tech.zuosi.bettercloth.BetterCloth
+version: 1.4.4 fix
+author: HuppyRedTeam
+commands: 
+  bch:
+    description: bettercloth main commands
+    usage: §c想必您输入了错误的命令或是出现了一些问题，尝试输入/bch来查看具体而正确的用法
+    permission: bch.command.main
+    permission-message: §c你需要bch.main权限来执行此命令
+permissions: 
+  bch.command.main:
+    description: 允许使用/bch
+    default: op

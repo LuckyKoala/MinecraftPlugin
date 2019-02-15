@@ -1,0 +1,63 @@
+#Essential config
+version: 0.1.7
+debug: false
+ad: true
+list:
+  #Weapon-Suppor-List
+  default:
+    BOW: true
+    WOOD_AXE: true
+    WOOD_SWORD: true
+    STONE_AXE: true
+    STONE_SWORD: true
+    IRON_AXE: true
+    IRON_SWORD: true
+    GOLD_AXE: true
+    GOLD_SWORD: true
+    DIAMOND_AXE: true
+    DIAMOND_SWORD: true
+  #Mod-Weapon-Support-List
+  mod:
+    enable: false
+    #Add what in mod you want to support here.
+  #Mob-Support-List
+  mob:
+    bat: true
+    chicken: false
+    cow: false
+    creeper: true
+    enderdragon: true
+    enderman: true
+    ghast: true
+    giant: false
+    golem: false
+    horse: false
+    irongolem: true
+    mushrooncow: false
+    npc: false
+    pig: false
+    pigzombie: true
+    sheep: false
+    silverfish: true
+    skeleton: true
+    slime: true
+    snowman: false
+    spider: true
+    squid: true
+    villager: false
+    witch: true
+    wither: true
+    wolf: true
+    zombie: true
+  #Mod-Item-List
+#Message config
+message:
+  activate: You have activate the weapon at your hand,have a time with it!
+  deactivate: You have deactivate the weapon at your hand,what a pity!
+  reload: Reload complete!
+  controlpanel: You must be a player online.
+#Rule config
+formula:
+  #How many unit will add ExtraAttackDamage.
+  fi: 100
+#Log of player who have used LSB:pre-feature,coming soon~0.0

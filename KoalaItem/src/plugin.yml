@@ -1,0 +1,37 @@
+name: KoalaItem
+main: tech.zuosi.koalaitem.KoalaItem
+version: 0.3.0r067
+author: LuckyKoala
+loadbefore: [PowerNBT]
+depend: [PowerNBT]
+prefix: KoalaItem
+
+commands:
+   ki:
+     description: This is the main command of KoalaItem.
+     usage: /ki <menu/open/reopen/version>
+     permission: koalaitem.command
+     permission-message: You don't have <koalaitem.command>!
+
+permissions:
+   koalaitem.*:
+     description: Gives access to all KoalaItem commands
+     default: op
+     children:
+       koalaitem.itemui: true
+       koalaitem.convert: true
+       koalaitem.menuui: true
+       koalaitem.update: true
+   koalaitem.itemui:
+     description: Allows you to open and use ItemUI
+     default: op
+   koalaitem.convert:
+     description: Allows you to convert VI to KI
+     default: op
+   koalaitem.menuui:
+     description: Allows you to open MenuUI directly
+     default: op
+   koalaitem.update:
+     description: Allows you to update ItemInfo
+     default: true
+
